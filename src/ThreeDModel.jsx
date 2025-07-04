@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Environment } from '@react-three/drei';
 
-const NUM_STARS = 18;
+const NUM_STARS = 36;
 const STAR_CONFIGS = Array.from({ length: NUM_STARS }).map((_, i) => ({
   radius: 2.5 + (i % 3) * 0.5 + Math.random() * 0.3,
   size: 0.08 + Math.random() * 0.04,

@@ -152,7 +152,7 @@ const App = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 mx-auto relative">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-400 to-teal-500 blur-xl opacity-30 animate-pulse"></div>
                 <img
-                  src="https://readdy.ai/api/search-image?query=professional%20portrait%20of%20a%20young%20Indian%20male%20developer%20with%20glasses%2C%20professional%20attire%2C%20neutral%20expression%2C%20high%20quality%2C%20studio%20lighting%2C%20modern%20tech%20office%20background%2C%20professional%20headshot%20style&width=400&height=400&seq=profile&orientation=squarish"
+                  src="mohan.png"
                   alt="Santhosam Mohan"
                   className="rounded-full w-full h-full object-cover relative z-10 border-4 border-blue-500/30"
                 />
