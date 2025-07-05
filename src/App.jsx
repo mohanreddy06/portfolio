@@ -30,7 +30,7 @@ const App = () => {
             href="#"
             className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-teal-500 bg-clip-text text-transparent"
           >
-            Santhosam.dev
+            Santhosam Mohan
           </a>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -81,11 +81,7 @@ const App = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
         <div className="absolute inset-0 z-0">
-          <img
-            src="https://readdy.ai/api/search-image?query=futuristic%20digital%20grid%20background%20with%20glowing%20blue%20and%20teal%20neon%20lines%20on%20dark%20background%2C%20tech%20inspired%2C%20abstract%2C%20modern%2C%20high%20resolution%2C%20detailed%2C%20digital%20art%2C%20ocean%20aesthetic&width=1440&height=800&seq=hero-bg&orientation=landscape"
-            alt="Hero Background"
-            className="w-full h-full object-cover object-top"
-          />
+          
           <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
@@ -578,7 +574,7 @@ const App = () => {
                   Bachelor of Technology
                 </h3>
                 <p className="text-slate-300 mb-1">MREC</p>
-                <p className="text-slate-400 mb-2">2019 - 2023</p>
+                <p className="text-slate-400 mb-2">2023- 2027</p>
                 <div className="inline-block px-3 py-1 bg-blue-900/40 rounded-full text-sm mb-3">
                   8.1 CGPA
                 </div>
@@ -598,7 +594,7 @@ const App = () => {
                   Intermediate
                 </h3>
                 <p className="text-slate-300 mb-1">Narayana Jr College</p>
-                <p className="text-slate-400 mb-2">2017 - 2019</p>
+                <p className="text-slate-400 mb-2">2021- 2023</p>
                 <div className="inline-block px-3 py-1 bg-teal-900/40 rounded-full text-sm mb-3">
                   98.1%
                 </div>
@@ -616,7 +612,7 @@ const App = () => {
                 <div className="absolute top-6 -left-3 md:left-auto md:-right-3 w-6 h-6 bg-blue-500 transform rotate-45 hidden md:block"></div>
                 <h3 className="text-xl font-bold mb-2 text-blue-300">SSC</h3>
                 <p className="text-slate-300 mb-1">Ekashila High School</p>
-                <p className="text-slate-400 mb-2">2016 - 2017</p>
+                <p className="text-slate-400 mb-2">2020 - 2021</p>
                 <div className="inline-block px-3 py-1 bg-blue-900/40 rounded-full text-sm mb-3">
                   10 CGPA
                 </div>

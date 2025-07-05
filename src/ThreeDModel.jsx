@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Environment } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 
-const NUM_STARS = 36;
+const NUM_STARS = 60;
 const STAR_CONFIGS = Array.from({ length: NUM_STARS }).map((_, i) => ({
   radius: 2.5 + (i % 3) * 0.5 + Math.random() * 0.3,
-  size: 0.08 + Math.random() * 0.04,
+  size: 0.04 + Math.random() * 0.02,
   speed: 0.7 + Math.random() * 0.7,
   phase: Math.random() * Math.PI * 2,
 }));
@@ -57,13 +57,17 @@ export default function ThreeDModel() {
   return (
     <div style={{ width: '100%', height: 340, maxWidth: 480, margin: '0 auto' }}>
       <Canvas shadows camera={{ position: [0, 0, 6], fov: 50 }}>
-        <ambientLight intensity={0.7} />
+        <ambientLight intensity={0.4} />
         <directionalLight position={[10, 10, 10]} intensity={1.2} castShadow />
+        <directionalLight position={[-10, -10, -10]} intensity={0.8} />
+        <pointLight position={[0, 5, 0]} intensity={0.6} color="#7f9cf5" />
+        <pointLight position={[0, -5, 0]} intensity={0.4} color="#a5b4fc" />
+        
         <ImpressiveSphere position={[0, 0, 0]} />
         {STAR_CONFIGS.map((star, i) => (
           <OrbitingStar key={i} {...star} index={i} />
         ))}
-        <Environment preset="sunset" background={false} />
+        
         <OrbitControls enablePan={false} enableZoom={false} autoRotate autoRotateSpeed={0.7} />
       </Canvas>
     </div>
